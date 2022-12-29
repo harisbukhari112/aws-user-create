@@ -4,8 +4,9 @@ require('dotenv').config();
 const Cognito = require('./cognito/index');
 const { verify } = require('./cognito/index');
 const body = {
-   email: "onexlab.io@gmail.com",
-   password: "Test123456!"
+//    email: "onexlab.io@gmail.com",
+    email: "uzairahad@gmail.com",
+    password: "Test123456!"
 };
 
 async function Signup() {
@@ -20,9 +21,9 @@ async function Verify() {
 
 async function SignIn() {
     const response = await Cognito.signIn(body.email,body.password);
-    console.log(response);
+    console.log("user signIn response",response);
 }
 
-// Signup();
+Signup();
 // Verify();
-SignIn();
+// SignIn();

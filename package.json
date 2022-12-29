@@ -2,6 +2,9 @@
   "name": "cognito",
   "description": "cognito",
   "version": "8.10.0",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
   "dependencies": {
     "amazon-cognito-identity-js": "^4.4.0",
     "async": "^3.2.0",
@@ -9,6 +12,7 @@
     "dotenv": "8.2.0",
     "jwt-decode": "^2.2.0",
     "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.20",
     "uuid": "^8.3.0"
   },
   "devDependencies": {
